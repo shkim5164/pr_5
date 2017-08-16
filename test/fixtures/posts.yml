@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  buyer_id: 1
+  st_time: 2017-08-16 03:27:11
+  end_time: 2017-08-16 03:27:11
+  runningtime: 2017-08-16 03:27:11
+  st_price: 1
+  end_price: 1
+  bn_price: 1
+  up_price: 1
+  au_type: MyString
+  category: MyString
+  like: 1
+  img_address: MyString
+
+two:
+  buyer_id: 1
+  st_time: 2017-08-16 03:27:11
+  end_time: 2017-08-16 03:27:11
+  runningtime: 2017-08-16 03:27:11
+  st_price: 1
+  end_price: 1
+  bn_price: 1
+  up_price: 1
+  au_type: MyString
+  category: MyString
+  like: 1
+  img_address: MyString

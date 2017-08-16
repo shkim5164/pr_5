@@ -1,0 +1,65 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :buyer_id %><br>
+    <%= f.number_field :buyer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :st_time %><br>
+    <%= f.datetime_select :st_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %><br>
+    <%= f.datetime_select :end_time %>
+  </div>
+  <div class="field">
+    <%= f.label :runningtime %><br>
+    <%= f.time_select :runningtime %>
+  </div>
+  <div class="field">
+    <%= f.label :st_price %><br>
+    <%= f.number_field :st_price %>
+  </div>
+  <div class="field">
+    <%= f.label :end_price %><br>
+    <%= f.number_field :end_price %>
+  </div>
+  <div class="field">
+    <%= f.label :bn_price %><br>
+    <%= f.number_field :bn_price %>
+  </div>
+  <div class="field">
+    <%= f.label :up_price %><br>
+    <%= f.number_field :up_price %>
+  </div>
+  <div class="field">
+    <%= f.label :au_type %><br>
+    <%= f.text_field :au_type %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :like %><br>
+    <%= f.number_field :like %>
+  </div>
+  <div class="field">
+    <%= f.label :img_address %><br>
+    <%= f.text_field :img_address %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

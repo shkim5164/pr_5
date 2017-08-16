@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Buyer:</strong>
+  <%= @post.buyer_id %>
+</p>
+
+<p>
+  <strong>St time:</strong>
+  <%= @post.st_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @post.end_time %>
+</p>
+
+<p>
+  <strong>Runningtime:</strong>
+  <%= @post.runningtime %>
+</p>
+
+<p>
+  <strong>St price:</strong>
+  <%= @post.st_price %>
+</p>
+
+<p>
+  <strong>End price:</strong>
+  <%= @post.end_price %>
+</p>
+
+<p>
+  <strong>Bn price:</strong>
+  <%= @post.bn_price %>
+</p>
+
+<p>
+  <strong>Up price:</strong>
+  <%= @post.up_price %>
+</p>
+
+<p>
+  <strong>Au type:</strong>
+  <%= @post.au_type %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @post.category %>
+</p>
+
+<p>
+  <strong>Like:</strong>
+  <%= @post.like %>
+</p>
+
+<p>
+  <strong>Img address:</strong>
+  <%= @post.img_address %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
